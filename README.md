@@ -283,28 +283,6 @@ docker-compose up -d
 | **TF-IDF Features** | 1000 |
 | **Train-Val Split** | 80-20 |
 
-## 🐛 Troubleshooting
-
-### Issue: "ModuleNotFoundError: No module named 'tensorflow'"
-**Solution**: Reinstall dependencies
-```bash
-pip install --upgrade -r requirements.txt
-```
-
-### Issue: MongoDB Connection Error
-**Solution**: MongoDB is optional. App works without it using CSV data.
-
-### Issue: Port 8501 already in use
-**Solution**: Run on different port
-```bash
-streamlit run apps.py --server.port 8502
-```
-
-### Issue: CUDA/GPU not found
-**Solution**: CPU mode is automatic. For GPU support:
-```bash
-pip install tensorflow-gpu
-```
 
 ## 📝 Data Source
 
